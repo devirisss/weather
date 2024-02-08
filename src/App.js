@@ -28,7 +28,6 @@ function App() {
         weatherData ?
           <div className='weatherContainer'>
             <WeatherImages info={weatherData} />
-            <h1>{weatherData.name}</h1>
             <WeatherForecast data={weatherData} />
             <div onClick={switching} className='button'>
               <p>Return</p>

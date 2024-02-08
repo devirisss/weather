@@ -17,7 +17,7 @@ body,
     display: grid;
     position: absolute;
     top: 0;
-    left: 0;
+    bottom: 0;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-rows: auto auto auto auto auto auto auto;
     justify-content: center;
@@ -117,8 +117,9 @@ body,
     gap: 100px;
 }
 
-.weatherContainer h1 {
+h1 {
     font-size: 50px;
+    text-align: center;
 }
 
 .cityToChoose {
@@ -499,6 +500,10 @@ body,
         grid-row-end: 5;
     }
 
+    .weatherContainer {
+        gap: 35px;
+    }
+
     .cityToChoose input {
         font-size: 10px;
     }
@@ -507,8 +512,12 @@ body,
         font-size: 30px;
     }
 
+    .weatherCurrent h1 {
+        font-size: 30px;
+    }
+
     .weatherTemp {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .weatherFeel {
